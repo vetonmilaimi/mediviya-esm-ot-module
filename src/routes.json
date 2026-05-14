@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "fhir2": ">=1.2",
+    "webservices.rest": ">=2.2.0"
+  },
+  "extensions": [
+    {
+      "component": "operationTheaterDashboard",
+      "name": "ot-dashboard-left-panel-link",
+      "slot": "homepage-dashboard-slot",
+      "order": 7,
+      "meta": {
+        "name": "operation-theater",
+        "title": "Operation Theater",
+        "slot": "ot-scheduling-slot"
+      }
+    },
+    {
+      "component": "root",
+      "name": "operation-theater-root",
+      "slot": "ot-scheduling-slot"
+    }
+  ],
+  "workspaces": [
+    {
+      "name": "ot-scheduling-filters-workspace",
+      "component": "otSchedulingFiltersWorkspace",
+      "title": "Scheduling Filters",
+      "type": "ot-scheduling",
+      "groups": ["ot-scheduling-group"]
+    },
+    {
+      "name": "add-surgical-appointment-workspace",
+      "component": "addSurgicalAppointmentWorkspace",
+      "title": "Add Surgery",
+      "type": "ot-scheduling",
+      "groups": ["ot-scheduling-group"]
+    }
+  ],
+  "modals": [
+    {
+      "component": "addActualTimeModal",
+      "name": "add-actual-time-modal"
+    },
+    {
+      "component": "moveSurgicalBlockModal",
+      "name": "move-surgical-block-modal"
+    },
+        {
+      "component": "cancelSurgicalBlockModal",
+      "name": "cancel-surgical-block-modal"
+    },
+    {
+      "component": "cancelSurgicalAppointmentModal",
+      "name": "cancel-surgical-appointment-modal"
+    },
+    {
+      "component": "calendarDetailsModal",
+      "name": "calendar-details-modal"
+    } 
+  ]
+}

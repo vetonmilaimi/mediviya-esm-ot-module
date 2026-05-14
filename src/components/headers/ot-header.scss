@@ -1,0 +1,22 @@
+@use '@carbon/colors';
+@use '@carbon/layout';
+@use '@carbon/type';
+@use '@openmrs/esm-styleguide/src/vars' as *;
+
+.header {
+  background-color: $ui-02;
+  border-block: 1px solid $ui-03;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: layout.$spacing-03;
+}
+
+@media  (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: layout.$spacing-03;
+    gap: layout.$spacing-03;
+  }
+}

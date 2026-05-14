@@ -1,0 +1,35 @@
+.add-actual-time-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field-group h5 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.datetime-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .datetime-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wrap-modal-header {
+
+  :global(.cds--modal-header__heading),
+  :global(.bx--modal-header__heading) {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: visible;
+    padding-right: 1.5rem;
+  }
+}

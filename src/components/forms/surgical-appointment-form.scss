@@ -1,0 +1,12 @@
+@use '@carbon/layout';
+@use '@openmrs/esm-styleguide/src/vars' as *;
+
+.formWrapper {
+  margin: layout.$spacing-05;
+}
+
+.submitButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: layout.$spacing-05;
+}

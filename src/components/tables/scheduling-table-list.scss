@@ -1,0 +1,133 @@
+.scheduling-table-wrapper {
+  max-width: 100%;
+}
+
+.actions-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.actions-layer :global(.cds--overflow-menu) {
+  min-height: 2rem;
+}
+
+.actions-menu-item {
+  white-space: nowrap;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.expanded-content {
+  padding: 0.5rem 0;
+}
+
+.expanded-card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  padding: 0.75rem;
+  background: #fbfbfd;
+}
+
+.expanded-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.patient-meta {
+  color: #6b6b6b;
+  font-size: 0.875rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.summary-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.status-badge {
+  background: rgba(2, 128, 144, 0.12);
+  color: #026b6b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.summary-meta {
+  text-align: right;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail dt {
+  font-size: 0.75rem;
+  color: #6b6b6b;
+}
+
+
+.detail dd {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.notes-box {
+  border-top: 1px dashed rgba(0, 0, 0, 0.06);
+  border-top: 1px dashed rgba(0, 0, 0, 0.06);
+  padding-top: 0.5rem;
+  color: #111;
+}
+
+.notes-text {
+  margin-top: 0.25rem;
+  color: #333;
+}
+
+:global(td).link-cell {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-meta {
+    text-align: left;
+  }
+}

@@ -1,0 +1,177 @@
+.container {
+  height: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #161616;
+  flex-grow: 1;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.infoBanner {
+  background-color: #e0f2ff;
+  border: 1px solid #bae6fd;
+  padding: 0.25rem 1rem !important;
+  min-height: 0 !important;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #004085;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.mainContent {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+
+  @media (max-width: 1260px) {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.leftColumn {
+  flex: 0 0 320px;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 2rem;
+  height: 100%;
+
+  @media (max-width: 1024px) {
+    flex: 1 1 auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    height: auto;
+  }
+}
+
+.rightColumn {
+  flex: 1;
+  padding-left: 2rem;
+
+  @media (max-width: 1024px) {
+    padding-left: 0;
+  }
+}
+
+.stepTitle {
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.labelColumn {
+  width: 140px;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #525252;
+}
+
+.requiredStar {
+  color: #da1e28;
+  margin-left: 2px;
+}
+
+.inputColumn {
+  flex-grow: 1;
+}
+
+.datetimeGroup {
+  display: flex;
+  gap: 0.5rem;
+
+  > :first-child {
+    flex: 2;
+  }
+
+  > :last-child {
+    flex: 1;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+
+    > :first-child,
+    > :last-child {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.toggleGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.otToggle {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f4f4f4;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+}
+
+.otToggleActive {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+
+.step2Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.emptyState {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  border-bottom: 1px solid #eee;
+}
+
+:global(td).link-cell {
+  cursor: pointer;
+}

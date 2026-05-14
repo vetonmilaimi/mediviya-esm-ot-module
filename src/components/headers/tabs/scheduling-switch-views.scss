@@ -1,0 +1,5 @@
+.custom-tabs {
+ :global(.cds--tabs__nav-item--selected) {
+  border-color: var(--brand-03, #007d79);
+ }
+}
