@@ -4,7 +4,8 @@ Created from OpenMRS ESM Template App and ports [Bahmni UI OT Module](https://ba
 
 ## Quickstart
 
-You need to have node js installed with yarn and a local OpenMRS instance running with the [openmrs-module-operationtheater](https://github.com/openmrs/openmrs-module-operationtheater) backend module installed.
+You need to have node js installed (e.g. `nvm install 24.12.0`) with yarn and a local OpenMRS instance running with the [openmrs-module-operationtheater](https://github.com/openmrs/openmrs-module-operationtheater) backend module installed - you can use the reference distro for example [openmrs-distro-referenceapplication](https://github.com/openmrs/openmrs-distro-referenceapplication/tree/main).
+
 
 * Install dependencies `yarn`
 * Run locally with `yarn start --backend=http://localhost --port=8086`
